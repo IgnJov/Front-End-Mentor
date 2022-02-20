@@ -1,2 +1,2 @@
-# Front-End-Mentor
-Front End Mentor challenges solution
+# Frontend-Mentor
+Frontend Mentor challenges solution
