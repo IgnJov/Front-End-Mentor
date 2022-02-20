@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./3 column preview card component.jpeg)
+![](./3-column-preview-card-component.jpeg)
 
 ### Links
 
--   Solution URL: [3-column preview card component](https://github.com/IgnJov/Frontend-Mentor/edit/main/Newbie%20-%203%20column%20preview%20card%20component)
+-   Solution URL: [Newbie - 3-column preview card component](https://github.com/IgnJov/Frontend-Mentor/edit/main/Newbie%20-%203%20column%20preview%20card%20component)
 -   Live Site URL: [3-column preview card component](https://ignjov-3-column-preview-card-component-solution.vercel.app/)
 
 ### Built with
