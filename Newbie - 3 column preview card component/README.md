@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [3-column preview card component](https://github.com/IgnJov/Frontend-Mentor/edit/main/Newbie%20-%203%20column%20preview%20card%20component)
+-   Live Site URL: [3-column preview card component](https://ignjov-3-column-preview-card-component-solution.vercel.app/)
 
 ### Built with
 
