@@ -23,7 +23,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 -   Solution URL: [Newbie - QR code component](https://github.com/IgnJov/Frontend-Mentor/edit/main/Newbie%20-%20QR%20code%20component)
--   Live Site URL: [QR code component](https://ignjov-fm-qr-code-component.netlify.app)
+-   Live Site URL: [QR code component](https://ignjov-qr-code-component.vercel.app/)
 
 ## My process
 
