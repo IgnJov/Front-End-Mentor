@@ -1,0 +1,128 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --primary1: hsl(185, 75%, 39%); /*Dark Cyan*/
+    --primary2: hsl(229, 23%, 23%); /*Very dark desaturated blue*/
+    --primary3: hsl(227, 10%, 46%); /*Dark grayish blue*/
+    --neutral1: hsl(227, 10%, 46%); /*Dark gray*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: "Kumbh Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary1);
+    background-image: url(images/bg-pattern-top.svg),
+        url(images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, left 50vw top 45vh;
+    background-repeat: no-repeat;
+}
+
+#card {
+    z-index: 1;
+    width: 85%;
+    min-width: 276px;
+    max-width: 350px;
+    background-color: white;
+    text-align: center;
+
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 25px 40px rgb(0, 0, 0, 0.2);
+}
+
+#card-top {
+    position: relative;
+    height: 18rem;
+    border-bottom: 1px solid rgb(233, 233, 233);
+
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#card img {
+    align-self: center;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-desc {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
+}
+
+#name,
+.stats-heading {
+    color: var(--primary2);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#age {
+    color: var(--primary3);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#origin,
+.stats-desc {
+    color: var(--neutral1);
+    font-weight: 400;
+}
+
+#origin {
+    position: relative;
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+}
+
+.stats {
+    padding: 1.5em 0;
+}
+
+.stats-desc {
+    margin-top: 0.3em;
+    font-size: 0.55rem;
+    letter-spacing: 0.08rem;
+}
+
+#card-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Utility Class */
+
+.primary3 {
+    color: var(--primary3);
+}
+
+.neutral1 {
+    color: var(--neutral1);
+}
