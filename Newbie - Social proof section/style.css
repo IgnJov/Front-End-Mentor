@@ -1,0 +1,244 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --primary1: hsl(300, 43%, 22%); /*Very Dark Magenta*/
+    --primary2: hsl(333, 80%, 67%); /*Soft Pink*/
+    --neutral1: hsl(303, 10%, 53%); /*Dark Grayish Magenta*/
+    --neutral2: hsl(300, 24%, 96%); /*Light Grayish Magenta*/
+    --neutral3: hsl(0, 0%, 100%); /*White*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Spartan", sans-serif;
+
+    background-image: url(images/bg-pattern-top-mobile.svg),
+        url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    min-width: 275px;
+    max-width: 550px;
+    margin: 0 24px;
+
+    display: grid;
+    gap: 24px;
+    grid-template-areas:
+        "desc"
+        "rating"
+        "review";
+}
+
+#description {
+    grid-area: desc;
+}
+
+#rating {
+    grid-area: rating;
+}
+
+#review {
+    grid-area: review;
+}
+
+/*Description*/
+#desc-heading {
+    color: var(--primary1);
+    line-height: 1;
+}
+
+#desc-paragraph {
+    color: var(--neutral1);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/*Rating*/
+.rating-card {
+    background-color: var(--neutral2);
+    border-radius: 10px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.star-container img {
+    margin: 0 2.5px;
+}
+
+.rating-desc {
+    color: var(--primary1);
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    margin-top: 10px;
+}
+
+/*Review*/
+.review-card {
+    background-color: var(--primary1);
+    border-radius: 10px;
+    padding: 2.5em 1.8em;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.review-profile {
+    display: flex;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 2.5em;
+    align-self: center;
+}
+
+.profile-name {
+    color: var(--neutral2);
+    font-weight: 700;
+    font-size: 0.8125rem;
+
+    margin-bottom: 0.3em;
+}
+
+.status {
+    color: var(--primary2);
+    font-size: 0.8125rem;
+}
+
+.review-profile-desc {
+    color: var(--neutral2);
+    margin-left: 1.25em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-paragraph {
+    color: var(--neutral2);
+    font-size: 0.8125rem;
+    line-height: 1.7;
+
+    margin: 0;
+    margin-top: 30px;
+}
+
+#desc-heading,
+#desc-paragraph,
+.rating-card {
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg),
+            url(images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    #container {
+        width: 1110px;
+        max-width: 1110px;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "desc rating"
+            "review review";
+    }
+
+    /*Desc*/
+    #desc-heading {
+        font-size: 2.84rem;
+        padding-right: 30%;
+        margin: 0;
+    }
+
+    #desc-paragraph {
+        padding-right: 20%;
+    }
+
+    /*Rating*/
+    #rating {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating-card {
+        min-width: 400px;
+        width: 83%;
+        display: flex;
+    }
+
+    #rating-2 {
+        align-self: center;
+    }
+
+    #rating-3 {
+        align-self: end;
+    }
+
+    .star-container {
+        margin-left: 25px;
+    }
+
+    .rating-desc {
+        margin: 0;
+        margin-left: 25px;
+    }
+
+    /*Review*/
+    #review {
+        display: flex;
+        justify-content: space-between;
+        height: 270px;
+    }
+
+    .review-card {
+        max-width: 350px;
+        margin: 0;
+    }
+
+    #review-1 {
+        align-self: start;
+    }
+
+    #review-2 {
+        align-self: center;
+    }
+
+    #review-3 {
+        align-self: end;
+    }
+
+    #desc-heading,
+    #desc-paragraph,
+    .rating-card {
+        text-align: left;
+    }
+}
